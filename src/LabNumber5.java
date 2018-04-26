@@ -16,6 +16,7 @@ public class LabNumber5 {
 			System.out.println("Please enter an integer from 1 to 25!");//25 factorial hit the limit of long.
 			num = scnr.nextInt();
 			if (num < 1 || num > 25) {
+				System.out.println("The number entered does not meet requirement!");
 				continue;
 			}
 
