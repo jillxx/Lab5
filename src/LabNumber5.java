@@ -1,3 +1,4 @@
+
 //Jiao Xu  4/26/2018
 //This program calculate the factorial of a number.
 import java.util.Scanner;
@@ -10,10 +11,11 @@ public class LabNumber5 {
 		String ifContinue = "y";
 
 		do {
-
-			System.out.println("Please enter an integer from 1 to 59!");
+			// verify the number is between 1 and the highest integer that returns
+			// accurate factorial calculation 
+			System.out.println("Please enter an integer from 1 to 25!");//25 factorial hit the limit of long.
 			num = scnr.nextInt();
-			if (num < 1 || num > 59) {
+			if (num < 1 || num > 25) {
 				continue;
 			}
 
@@ -25,8 +27,8 @@ public class LabNumber5 {
 			System.out.print("Continue? (y/n): ");
 			ifContinue = scnr.next();
 		} while (ifContinue.equalsIgnoreCase("y"));// determine the input
-		
-		System.out.println("Bye!");//if the input is no, end the program
+
+		System.out.println("Bye!");// if the input is no, end the program
 		scnr.close();
 
 	}
