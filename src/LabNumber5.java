@@ -13,9 +13,9 @@ public class LabNumber5 {
 		do {
 			// verify the number is between 1 and the highest integer that returns
 			// accurate factorial calculation 
-			System.out.println("Please enter an integer from 1 to 25!");//25 factorial hit the limit of long.
+			System.out.println("Please enter an integer from 1 to 20!");//25 factorial hit the limit of long.
 			num = scnr.nextInt();
-			if (num < 1 || num > 25) {
+			if (num < 1 || num > 26) {
 				System.out.println("The number entered does not meet requirement!");
 				continue;
 			}
